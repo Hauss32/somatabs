@@ -1,5 +1,8 @@
+/* Textures from https: //www.transparenttextures.com/ */
+
 body {
     background-color: #f0eeea;
+    background-image: url('./assets/concrete-wall-3.png');
 }
 
 h1, h2 {
@@ -16,6 +19,7 @@ header {
     background-color: #6f2f46;
     height: 130px;
     border-bottom: 2px solid #f0c266;
+    background-image: url('./assets/cream-pixels.png');
 }
 
 header h1 {
@@ -86,6 +90,7 @@ main {
     font-size: 2.5em;
     margin-top: 50px;
     padding-left: 50px;
+    width: 400px;
 }
 
 .copy li {
