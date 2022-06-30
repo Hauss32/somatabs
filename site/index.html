@@ -12,21 +12,22 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./index.js"></script>
 
-    <title>SOMA TABS</title>
+    <title>SomaTabs</title>
 </head>
 <body>
     <header>
         <img src="./assets/soma-tab.svg" alt="Soma Tab logo shaped like a round pill">
         <h1>SOMA TABS</h1>
         <ul>
-            <li><a href="#">about</a></li>
-            <li><a href="#">products</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#products">products</a></li>
             <li><a href="#">contact</a></li>
+            <li><img src="./assets/shopping-cart.svg" alt="shopping cart icon"></li>
         </ul>
     </header>
     <main>
         <section class="copy">
-            <h1>you deserve a Soma holiday...</h1>
+            <h1 class="section-title">you deserve a Soma holiday...</h1>
             
             <h2>what users say about Soma</h2>
             <ul>
@@ -44,6 +45,39 @@
         </section>
         <section class="pill-img">
             <img src="./assets/soma-tab.svg" alt="Soma Tab logo shaped like a round pill">
+        </section>
+        <section class="about" id="about">
+            <img src="./assets/holiday-typewriter.png" alt="typewriter with the word holiday">
+            <article>
+                <h2>the Soma experience</h2>
+                <p>
+                    Millions of people have experienced the great joys of Soma.
+                </p>
+                <p>
+                    Whether you want a quick escape from the discomforts of your day, or a full mental vacation 
+                    from the stress and bustle, Soma will melt your cares away.
+                </p>
+                <p>
+                    Where will you go on your next Soma holiday?
+                </p>
+            </article>
+        </section>
+        <section class="products" id="products">
+            <div>
+                <h1 class="section-title">SomaTab products</h1>
+                <img src="./assets/soma-box.svg" alt="outline of box with pill logo inside">
+            </div>
+            <article class="product-desc">
+                <h1>"the" SomaTab</h1>
+                <p>
+                    One single, timeless product has defined the Soma experience, 
+                    and that product is the SomaTab.
+                </p>
+                <p>
+                    Available in a box of 50, each Tab is one full-gramme, scored down
+                    the middle for smaller, half-gramme doses when desired.
+                </p>
+            </article>
         </section>
     </main>
 </body>
