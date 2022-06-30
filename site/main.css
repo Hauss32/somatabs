@@ -1,8 +1,12 @@
 /* Textures from https: //www.transparenttextures.com/ */
 
+/* TODO: DRY it up and maybe break into separate files */
+
 body {
     background-color: #f0eeea;
     background-image: url('./assets/concrete-wall-3.png');
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 .overlay {
@@ -19,7 +23,7 @@ body {
 }
 
 .overlay-modal {
-    width: 400px;
+    max-width: 400px;
     height: 300px;
     border: 2px solid #6f2f46;
     border-radius: 5px;
@@ -96,6 +100,7 @@ header {
     min-height: 130px;
     border-bottom: 2px solid #f0c266;
     background-image: url('./assets/cream-pixels.png');
+    width: 100%;
 }
 
 header h1 {
@@ -105,7 +110,6 @@ header h1 {
     text-shadow: -1px -1px #9F8144;
     padding-left: 15px;
     letter-spacing: 5px;
-    width: 800px;
 }
 
 header img {
@@ -136,7 +140,7 @@ main {
 }
 
 .copy {
-    width: 600px;
+    max-width: 600px;
     padding-left: 50px;
 }
 
@@ -163,7 +167,7 @@ main {
     font-size: 2.5em;
     margin-top: 50px;
     padding-left: 50px;
-    width: 400px;
+    max-width: 400px;
 }
 
 .copy li {
@@ -216,7 +220,7 @@ main {
 }
 
 .about article {
-    width: 740px;
+    max-width: 740px;
 }
 
 .about h2 {
@@ -251,7 +255,10 @@ main {
 }
 
 .products div {
-    width: 700px;
+    max-width: 700px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .products img {
@@ -262,7 +269,7 @@ main {
 
 
 .product-desc {
-    width: 700px;
+    max-width: 700px;
     padding-left: 50px;
 }
 
@@ -379,6 +386,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     background-color: #6f2f46;
+    width: 100%;
     height: 100px;
     border-top: 2px solid #f0c266;
     background-image: url('./assets/cream-pixels.png');
@@ -395,12 +403,44 @@ footer ul {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    width: 500px;
+    max-width: 500px;
     padding-right: 20px;
 }
 
 footer a {
     font-size: 1em;
     padding: 0 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .pill img {
+        width: 80%;
+    }
+
+    .section-title {
+        margin-left: 10px;
+        padding: 10px 10px;
+        max-width: 300px;
+    }
+
+    .copy {
+        padding-left: 10px;
+    }
+
+    .about h2 {
+        margin-left: 10px;
+    }
+
+    .products img {
+        padding: 50px 0;
+    }
+
+    .copy li {
+        margin: 25px 25px;
+    }
+
+    .copy li:nth-child(even) {
+        margin-left: 50px;
+    }
 }
 
