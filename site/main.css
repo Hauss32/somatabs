@@ -5,6 +5,71 @@ body {
     background-image: url('./assets/concrete-wall-3.png');
 }
 
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f0eeea;
+    z-index: 1000;
+    opacity: 95%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.overlay-modal {
+    width: 400px;
+    height: 300px;
+    border: 2px solid #6f2f46;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: white;
+    opacity: 1;
+    margin: 0 auto;
+    position: fixed;
+    top: 200px;
+    left: 0;
+    right: 0;
+    z-index: 1001;
+    font-size: 2em;
+}
+
+.overlay-modal h1 {
+    padding: 30px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.modal-button {
+    width: 50px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 50px;
+    font-size: 1.8em;
+    font-family: 'Montserrat Alternates', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-button:hover {
+    text-decoration: underline;
+    font-size: 2.2em;
+    cursor: pointer;
+}
+
+.button-yes {
+    color: rgb(86, 146, 86);
+}
+
+.button-no {
+    color: rgb(146, 86, 86);
+}
+
 h1, h2 {
     color: #6f2f46;
     font-family: 'Montserrat Alternates', sans-serif;
