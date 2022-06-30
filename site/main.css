@@ -12,6 +12,17 @@ h1, h2 {
     text-shadow: -1px -1px #f0c266;
 }
 
+a {
+    color: #9F8144;
+    text-decoration: none;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 1.6em;
+}
+
+a:hover {
+    color: #f0c266;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -46,17 +57,6 @@ header ul {
 
 header li {
     padding: 0 15px;
-}
-
-header li > a {
-    color: #9F8144;
-    text-decoration: none;
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 1.6em;
-}
-
-header li > a:hover {
-    color: #f0c266;
 }
 
 header li > img {
@@ -209,5 +209,110 @@ main {
     color: #6f2f46;
     font-size: 2em;
     padding-top: 20px;
+    opacity: 70%;
+}
+
+.contact-form {
+    min-height: 500px;
+    width: 100%;
+    background-color: #2f3771;
+    margin: 50px 0 300px 0;
+    border-top: 2px solid #9F8144;
+    border-bottom: 2px solid #9F8144;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    position: relative;
+    color: #f0c266;
+}
+
+.contact-form::before {
+    content: "";
+    background-image: url('./assets/concrete-wall-3.png');
+    background-repeat: repeat;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.3;
+}
+
+.contact-form h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
+    padding-top: 50px;
+    color: inherit;
+}
+
+.contact-form form {
+    margin: 0 auto;
+    z-index: 1;
+    padding-bottom: 20px;
+}
+
+.contact-form input, label, select {
+    display: block;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.contact-form label {
+    font-size: 1.5em;
+    color: inherit;
+    padding: 10px 0 20px 0;
+}
+
+.contact-form input, select {
+    height: 30px;
+    width: 200px;
+    margin-top: 10px;
+    border: 2px solid #9F8144;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+.contact-form input[type=submit] {
+    background-color: #6f2f46;
+    color: #f0c266;
+    width: 150px;
+}
+
+.contact-form input[type=submit]:hover {
+    background-color: #f0c266;
+    color: #6f2f46;
+    border-color: #6f2f46;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #6f2f46;
+    height: 100px;
+    border-top: 2px solid #f0c266;
+    background-image: url('./assets/cream-pixels.png');
+}
+
+footer p {
+    color: #f0c266;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 1em;
+    padding-left: 20px;
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 500px;
+    padding-right: 20px;
+}
+
+footer a {
+    font-size: 1em;
+    padding: 0 10px;
 }
 

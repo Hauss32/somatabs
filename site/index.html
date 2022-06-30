@@ -21,7 +21,7 @@
         <ul>
             <li><a href="#about">about</a></li>
             <li><a href="#products">products</a></li>
-            <li><a href="#">contact</a></li>
+            <li><a href="#contact">contact</a></li>
             <li><img src="./assets/shopping-cart.svg" alt="shopping cart icon"></li>
         </ul>
     </header>
@@ -70,7 +70,7 @@
             <article class="product-desc">
                 <h1>"the" SomaTab</h1>
                 <p>
-                    One single, timeless product has defined the Soma experience, 
+                    A single, timeless product has defined the Soma experience, 
                     and that product is the SomaTab.
                 </p>
                 <p>
@@ -79,6 +79,38 @@
                 </p>
             </article>
         </section>
+        <section class="contact-form" id="contact">
+            <h1>contact us</h1>
+            <form action="post">
+                <label>
+                    name
+                    <input type="name" name="name" id="name" placeholder="Soma User" required>
+                </label>
+                <label>
+                    email
+                    <input type="email" name="email" id="email" placeholder="hello@somatabs.com" required>
+                </label>
+                <label>
+                    contact reason
+                    <select name="reason" id="reason" required>
+                        <option selected disabled>Select a Reason...</option>
+                        <option value="purchase">I'm looking to purchase SomaTabs</option>
+                        <option value="website">Your website looks terrible</option>
+                        <option value="investor">I'm looking to invest in SomaTabs</option>
+                        <option value="reality">Is this a real product?</option>
+                    </select>
+                </label>
+                <input type="submit" value="submit" id="submit">
+            </form>
+        </section>
     </main>
+    <footer>
+        <p>SomaTab is made with ♡ and other chemicals in New London</p>
+        <ul>
+            <li><a href="#">terms & conditions</a></li>
+            <li><a href="#">privacy policy</a></li>
+            <li><a href="#">careers</a></li>
+        </ul>
+    </footer>
 </body>
 </html>
