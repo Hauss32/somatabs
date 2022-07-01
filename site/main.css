@@ -453,6 +453,7 @@ footer a {
 
     .pill-img {
         width: 80%;
+        margin: 0 auto;
     }
 
     .section-title {
@@ -572,6 +573,24 @@ footer a {
 
     .contact-form h1 {
         font-size: 2.5em;
+    }
+
+    .contact-form label {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contact-form input, select {
+        height: 40px;
+        width: 96%;
+        font-size: 1em;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .contact-form input[type=submit] {
+        margin-left: 5%;
     }
 
     footer p {
